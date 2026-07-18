@@ -8,11 +8,11 @@ extraSprites:
       0: Resources/GUI_Soldiers.gif
   - type: BIGOBS.PCK
     files:
-      0: Resources/Tank_Cannon_X14.png
+      3405: Resources/Tank_Cannon_X14.png
   - type: BATTLE.CAT
     files:
-      0: Resources/Sounds/LargeGunshoot4.ogg
-      1: Resources/Sounds/Reload_Mortar.ogg
+      289: Resources/Sounds/LargeGunshoot4.ogg
+      526: Resources/Sounds/Reload_Mortar.ogg
   - type: Projectiles
     width: 105
     height: 162

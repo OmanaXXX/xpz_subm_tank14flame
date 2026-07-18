@@ -10,11 +10,11 @@ items:
     costSell: 75000
     listOrder: 10419
   - type: AUX_TANK_14MM
-    weight: 250
-    bigSprite: 0
-    bulletSprite: 28
-    fireSound: 0
-    reloadSound: 1
+    weight: 150
+    bigSprite: 3405
+    bulletSprite: 3
+    fireSound: 289
+    reloadSound: 526
     accuracyAimed: 110
     accuracySnap: 75
     accuracyAuto: 55
