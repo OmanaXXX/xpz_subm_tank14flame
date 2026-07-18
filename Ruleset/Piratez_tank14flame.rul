@@ -1,0 +1,221 @@
+items:
+  - type: STR_TANKP_14MMFLAME_ARMOR
+    categories: [STR_BAT_CAT_ARMORS]
+    size: 20
+    costSell: 525000
+    listOrder: 10420
+  - type: STR_TANK_14MM
+    categories: [STR_BAT_CAT_COMPONENT]
+    size: 3
+    costSell: 75000
+    listOrder: 10419
+  - type: AUX_TANK_14MM
+    weight: 250
+    bigSprite: 0
+    bulletSprite: 28
+    fireSound: 0
+    reloadSound: 1
+    accuracyAimed: 110
+    accuracySnap: 75
+    accuracyAuto: 55
+    accuracyMultiplier:
+      firing: 0.4
+      bravery: 0.4
+      reactions: 0.2
+    costAuto:
+      time: 25
+      energy: 200
+    costSnap:
+      time: 15
+      energy: 110
+    costAimed:
+      time: 35
+      energy: 250
+    tuLoad: 150
+    autoRange: 200
+    snapRange: 200
+    dropoff: 1
+    bulletSpeed: 16
+    autoShots: 4
+    compatibleAmmo:
+      - STR_14MM_CHAINGUN_ROUNDS
+    battleType: 1
+    fixedWeapon: true
+    recover: false
+    invWidth: 1
+    invHeight: 3
+    turretType: 2
+armors:
+  - type: STR_TANKP_14MMFLAME_ARMOR_UC
+    spriteSheet: PIR_TANK.PCK
+    spriteInv: MAN_90
+    customArmorPreviewIndex: [353, 354]
+    allowInv: true
+    allowsRunning: false
+    allowsStrafing: false
+    allowsKneeling: false
+    turnBeforeFirstStep: true
+    turnCost: 6
+    fearImmune: false
+    corpseBattle:
+      - TANK_CORPSE_1
+      - TANK_CORPSE_2
+      - TANK_CORPSE_3
+      - TANK_CORPSE_4
+    corpseGeo: STR_TANK_CORPSE
+    storeItem: STR_TANKP_14MMFLAME_ARMOR
+    weight: -500
+    visibilityAtDark: 16
+    heatVision: 50
+    personalLight: 25
+    frontArmor: 175
+    sideArmor: 130
+    rearArmor: 90
+    underArmor: 60
+    moveSound: 14
+    movementType: 2
+    deathMale: 23
+    deathFemale: 23
+    drawingRoutine: 5
+    size: 2
+    overKill: 3.0
+    stats:
+       bravery: 10
+       firing: 20
+       health: 100
+       tu: 100
+       stamina: 500
+       reactions: -40
+    recovery:
+      time:
+        tu: 0.5
+        manaNormalized: 250.0
+      mana:
+        moraleCurrent: -0.021
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      energy:
+        flatHundred: 3
+        manaNormalized: 300.0
+      stun:
+        stunCurrent: 0.036
+    psiDefence:
+      psiStrength: 1.0
+      psiSkill: 0.2
+      moraleCurrent: 0.33
+      bravery: 0.2
+    damageModifier:
+      - 0.0
+      - 0.75
+      - 0.15
+      - 0.55
+      - 0.75
+      - 0.75
+      - 0.15
+      - 0.45
+      - 0.33
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.5
+      - 0.5
+      - 1.25
+      - 0.35
+      - 0.5
+      - 0.0
+      - 0.0
+    units:
+      - STR_SOLDIER_PEASANT
+      - STR_SOLDIER_DAMSEL
+      - STR_SOLDIER_SLAVE
+      - STR_SOLDIER_PUREBLOOD
+      - STR_SOLDIER_LOKNAR
+      - STR_SOLDIER_HYBRID
+      - STR_SOLDIER_GNOME
+      - STR_SOLDIER_CHORT
+      - STR_SOLDIER_NEKOMIMI
+      - STR_SOLDIER_NEKOMIMI_O
+      - STR_SOLDIER_NEKOMIMI_W
+      - STR_SOLDIER_NEKOMIMI_H
+      - STR_SOLDIER_DOLL
+    builtInWeapons:
+      - AUX_TANK_14MM
+      - AUX_ACAR_WEAPON_FLAMER
+      - INV_NULL_1X2_QD
+      - INV_NULL_4X2
+      - INV_NULL_2X1_LL
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LS
+      - INV_NULL_2X1_RS
+      - INV_NULL_JEWELRY
+      - INV_NULL_HAT_NOTORSO
+      - INV_NULL_TORSO3
+    loftempsSet: [ 92, 89, 90, 91 ]
+research:
+  - name: STR_TANKP_14MMFLAME_ARMOR
+    cost: 15
+    points: 20
+    dependencies:
+      - STR_TANKP_BATTLECANNON_ARMOR
+      - STR_HEAVY_FLAMER
+  - name: STR_TANK_14MM
+    dependencies:
+      - STR_TANKP_14MMFLAME_ARMOR
+manufacture:
+  - name: STR_TANK_14MM
+    category: STR_WEAPON_G
+    requires:
+      - STR_TANKP_14MMFLAME_ARMOR
+    space: 10
+    time: 2200
+    cost: 20000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_SCRAP_METAL: 30
+      STR_14MM_CHAINGUN: 1
+    listOrder: 10420
+  - name: STR_TANKP_14MMFLAME_ARMOR
+    category: STR_ASSEMBLY
+    requires:
+      - STR_TANKP_14MMFLAME_ARMOR
+    space: 0
+    time: 50
+    cost: 0
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_TANKP_CHASSIS: 1
+      STR_TANK_14MM: 1
+      STR_HEAVY_FLAMER: 1
+    refund: true
+    listOrder: 10420
+  - name: STR_TANKP_14MMFLAME_ARMOR_DA
+    category: STR_DISASSEMBLY
+    requires:
+      - STR_TANKP_14MMFLAME_ARMOR
+    space: 0
+    time: 50
+    cost: 0
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_TANKP_14MMFLAME_ARMOR: 1
+    producedItems:
+      STR_TANKP_CHASSIS: 1
+      STR_TANK_14MM: 1
+      STR_HEAVY_FLAMER: 1
+    refund: true
+ufopaedia:
+  - id: AUX_TANK_14MM
+    type_id: 4
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    text: STR_TANK_14MM_UFOPEDIA
+    requires:
+      - STR_TANK_14MM
+    listOrder: 10419
+  - id: STR_TANKP_14MMFLAME_ARMOR_UC
+    type_id: 5
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    text: STR_TANKP_14MMFLAME_ARMOR_UC_UFOPEDIA
+    requires:
+      - STR_TANKP_14MMFLAME_ARMOR
+    listOrder: 10420

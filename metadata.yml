@@ -1,0 +1,7 @@
+name: "Tank 14mm cannon / Flamethrower"
+version: "0.0.1"
+author: "Omana"
+description: "Adds Tank 14mm cannon / Flamethrower"
+id: TANK_14_FLAME
+master: piratez
+reservedSpace: 2
