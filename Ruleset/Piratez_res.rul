@@ -6,9 +6,6 @@ extraSprites:
     subY: 20
     files:
       0: Resources/GUI_Soldiers.gif
-  - type: BIGOBS.PCK
-    files:
-      0: Resources/Tank_Cannon_X14.png
   - type: Projectiles
     width: 105
     height: 162
@@ -16,8 +13,11 @@ extraSprites:
     subY: 3
     files:
       0: Resources/Smoke/Projectiles_DIO.png
+  - type: BIGOBS.PCK
+    files:
+      6000: Resources/Tank_Cannon_X14.png
 extraSounds:
   - type: BATTLE.CAT
     files:
-      0: Resources/Sounds/BozarFire2.ogg
-      1: Resources/Sounds/Reload_AR2.wav
+      2000: Resources/Sounds/BozarFire2.ogg
+      2001: Resources/Sounds/Reload_AR2.wav

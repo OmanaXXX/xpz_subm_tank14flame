@@ -11,10 +11,10 @@ items:
     listOrder: 10419
   - type: AUX_TANK_14MM
     weight: 150
-    bigSprite: 0
+    bigSprite: 6000
     bulletSprite: 3
-    fireSound: 0
-    reloadSound: 1
+    fireSound: 2000
+    reloadSound: 2001
     accuracyAimed: 110
     accuracySnap: 75
     accuracyAuto: 55
