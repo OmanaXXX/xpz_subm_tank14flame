@@ -4,4 +4,4 @@ author: "Omana"
 description: "Adds Tank 14mm cannon / Flamethrower"
 id: TANK_14_FLAME
 master: piratez
-reservedSpace: 2
+reservedSpace: 4
