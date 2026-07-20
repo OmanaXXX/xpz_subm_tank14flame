@@ -1,6 +1,8 @@
 ru:
-  STR_TANK_14MM: "14-мм пушка (Танк)"
   AUX_TANK_14MM: "14-мм пушка (Танк)"
+  STR_TANK_14MM: "14-мм пушка (Танк)"
+  AUX_TANK_FLAMER: "Огнемет (Танк)"
+  STR_TANK_FLAMER: "Огнемет (Танк)"
   STR_TANKP_14MMFLAME_ARMOR: "Танк 14-мм пушка/Огнемет"
   STR_TANKP_14MMFLAME_ARMOR_DA: "РЗБ: Танк 14-мм пушка/Огнемет"
   STR_TANKP_14MMFLAME_ARMOR_UC: "ТАНК 14ММ ПУШКА/ОГНЕМЕТ"

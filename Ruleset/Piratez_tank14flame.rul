@@ -9,6 +9,11 @@ items:
     size: 3
     costSell: 75000
     listOrder: 10419
+  - type: STR_TANK_FLAMER
+    categories: [STR_BAT_CAT_COMPONENT]
+    size: 3
+    costSell: 75000
+    listOrder: 10419
   - type: AUX_TANK_14MM
     weight: 150
     bigSprite: 6000
@@ -69,7 +74,6 @@ items:
     battleType: 1
     fixedWeapon: true
     recover: false
-    experienceTrainingMode: 6
     invWidth: 2
     invHeight: 3
 armors:
@@ -186,10 +190,6 @@ research:
     dependencies:
       - STR_TANKP_BATTLECANNON_ARMOR
       - STR_HEAVY_FLAMER
-    unlocks:
-      - AUX_TANK_14MM
-      - STR_TANK_14MM
-      - AUX_TANK_FLAMER
   - name: AUX_TANK_14MM
     dependencies:
       - STR_TANK_14MM
@@ -197,6 +197,9 @@ research:
     dependencies:
       - STR_TANKP_14MMFLAME_ARMOR
   - name: AUX_TANK_FLAMER
+    dependencies:
+      - STR_TANK_FLAMER
+  - name: STR_TANK_FLAMER
     dependencies:
       - STR_TANKP_14MMFLAME_ARMOR
 manufacture:
@@ -212,6 +215,18 @@ manufacture:
       STR_SCRAP_METAL: 30
       STR_14MM_CHAINGUN: 1
     listOrder: 10420
+  - name: STR_TANK_FLAMER
+    category: STR_WEAPON_G
+    requires:
+      - STR_TANKP_14MMFLAME_ARMOR
+    space: 10
+    time: 2200
+    cost: 20000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_SCRAP_METAL: 30
+      STR_HEAVY_FLAMER: 1
+    listOrder: 10420
   - name: STR_TANKP_14MMFLAME_ARMOR
     category: STR_ASSEMBLY
     requires:
@@ -223,7 +238,7 @@ manufacture:
     requiredItems:
       STR_TANKP_CHASSIS: 1
       STR_TANK_14MM: 1
-      STR_HEAVY_FLAMER: 1
+      STR_TANK_FLAMER: 1
     refund: true
     listOrder: 10420
   - name: STR_TANKP_14MMFLAME_ARMOR_DA
@@ -239,7 +254,7 @@ manufacture:
     producedItems:
       STR_TANKP_CHASSIS: 1
       STR_TANK_14MM: 1
-      STR_HEAVY_FLAMER: 1
+      STR_TANK_FLAMER: 1
     refund: true
 ufopaedia:
   - id: AUX_TANK_14MM
@@ -248,6 +263,13 @@ ufopaedia:
     text: STR_TANK_14MM_UFOPEDIA
     requires:
       - STR_TANK_14MM
+    listOrder: 10419
+  - id: AUX_TANK_FLAMER
+    type_id: 4
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    text: STR_TANK_FLAMER_UFOPEDIA
+    requires:
+      - STR_TANK_FLAMER
     listOrder: 10419
   - id: STR_TANKP_14MMFLAME_ARMOR_UC
     type_id: 5

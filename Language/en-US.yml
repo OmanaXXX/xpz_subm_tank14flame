@@ -1,6 +1,8 @@
 en-US:
-  STR_TANK_14MM: "14mm Cannon (Tank)"
   AUX_TANK_14MM: "14mm Cannon (Tank)"
+  STR_TANK_14MM: "14mm Cannon (Tank)"
+  AUX_TANK_FLAMER: "Flamethrower (Tank)"
+  STR_TANK_FLAMER: "Flamethrower (Tank)"
   STR_TANKP_14MMFLAME_ARMOR: "Tank 14mm cannon/Flamethrower"
   STR_TANKP_14MMFLAME_ARMOR_DA: "D/A: Tank 14mm cannon/Flamethrower"
   STR_TANKP_14MMFLAME_ARMOR_UC: "TANK 14MM CANNON/FLAMETHROWER"
