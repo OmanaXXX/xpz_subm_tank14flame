@@ -18,7 +18,7 @@ items:
     accuracyAimed: 110
     accuracySnap: 75
     accuracyAuto: 55
-    accuracyMultiplier:
+    accuracyMultiplier: &TankAccuracyMultiplier
       firing: 0.4
       bravery: 0.4
       reactions: 0.2
@@ -42,6 +42,34 @@ items:
     battleType: 1
     fixedWeapon: true
     recover: false
+    invWidth: 2
+    invHeight: 3
+  - type: AUX_TANK_FLAMER
+    weight: 40
+    bigSprite: 6010
+    bulletSprite: 25
+    fireSound: 2010
+    reloadSound: 2011
+    accuracyAuto: 33
+    accuracyMultiplier: *TankAccuracyMultiplier
+    costAuto:
+      time: 12
+      energy: 125
+    autoShots: 10
+    sprayWaypoints: 3
+    tuLoad: 40
+    autoRange: 15
+    bulletSpeed: 32
+    arcingShot: true
+    maxRange: 25
+    dropoff: 1
+    compatibleAmmo:
+      - STR_HEAVY_FLAMER_CLIP
+      - STR_HEAVY_FLAMER_COMPRESSED_CLIP
+    battleType: 1
+    fixedWeapon: true
+    recover: false
+    experienceTrainingMode: 6
     invWidth: 2
     invHeight: 3
 armors:
@@ -140,7 +168,7 @@ armors:
       - STR_SOLDIER_DOLL
     builtInWeapons:
       - AUX_TANK_14MM
-      - AUX_ACAR_WEAPON_FLAMER
+      - AUX_TANK_FLAMER
       - INV_NULL_1X2_QD
       - INV_NULL_4X2
       - INV_NULL_2X1_LL
@@ -158,7 +186,17 @@ research:
     dependencies:
       - STR_TANKP_BATTLECANNON_ARMOR
       - STR_HEAVY_FLAMER
+    unlocks:
+      - AUX_TANK_14MM
+      - STR_TANK_14MM
+      - AUX_TANK_FLAMER
+  - name: AUX_TANK_14MM
+    dependencies:
+      - STR_TANK_14MM
   - name: STR_TANK_14MM
+    dependencies:
+      - STR_TANKP_14MMFLAME_ARMOR
+  - name: AUX_TANK_FLAMER
     dependencies:
       - STR_TANKP_14MMFLAME_ARMOR
 manufacture:
