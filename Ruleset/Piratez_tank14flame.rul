@@ -42,9 +42,8 @@ items:
     battleType: 1
     fixedWeapon: true
     recover: false
-    invWidth: 1
+    invWidth: 2
     invHeight: 3
-    turretType: 2
 armors:
   - type: STR_TANKP_14MMFLAME_ARMOR_UC
     spriteSheet: PIR_TANK.PCK
